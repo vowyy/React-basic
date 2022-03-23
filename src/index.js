@@ -33,13 +33,42 @@
 
 // テンプレート文字列 文字列の中に変数
 
-const name = "小俣";
-const age = 28;
+// const name = "小俣";
+// const age = 28;
 
-//従来
-const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
-console.log(message1);
+// //従来
+// const message1 = "私の名前は" + name + "です。年齢は" + age + "です。";
+// console.log(message1);
 
-//テンプレート文字列
-const message2 = `私の名前は${name}です。年齢は${age}です。`;
-console.log(message2);
+// //テンプレート文字列
+// const message2 = `私の名前は${name}です。年齢は${age}です。`;
+// console.log(message2);
+
+// アロー関数
+// 従来
+
+function func1(str) {
+  return str;
+}
+
+// 上としたは同じ
+// const func1 = function(str) {
+//   return str;
+// }
+
+console.log(func1("小俣です"));
+
+//　アロー関数
+// const func2 = (str) => {
+//   return str;
+// };
+// したと同じ
+const func2 = (str) => str;
+
+console.log(func2("func2です"));
+
+const func3 = (num1, num2) => {
+  return num1 + num2;
+};
+
+console.log(func3(1, 100));
