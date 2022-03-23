@@ -63,12 +63,33 @@ console.log(func1("小俣です"));
 //   return str;
 // };
 // したと同じ
-const func2 = (str) => str;
+// const func2 = (str) => str;
 
-console.log(func2("func2です"));
+// console.log(func2("func2です"));
 
-const func3 = (num1, num2) => {
-  return num1 + num2;
-};
+// const func3 = (num1, num2) => {
+//   return num1 + num2;
+// };
 
-console.log(func3(1, 100));
+// console.log(func3(1, 100));
+
+// 分割代入
+// オブジェクトのパターン
+// const myProfile = {
+//   name: "小俣",
+//   age: 35,
+// }
+// const message1 = `名前は${myProfile.name}です。年齢は${myProfile.age}歳です。`
+// console.log(message1);
+
+// const { name, age } = myProfile;
+// const message2 = `名前は${name}です。年齢は${age}歳です。`
+// console.log(message2);
+
+const myProfile = ["友広", 23];
+const message3 = `名前は${myProfile[0]}です。年齢は${myProfile[1]}歳です。`;
+console.log(message3);
+
+const [name, age] = myProfile;
+const message4 = `名前は${name}です。年齢は${age}歳です。`;
+console.log(message4);
